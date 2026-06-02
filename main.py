@@ -50,3 +50,12 @@ students = [student1, student2, student3]
 
 for student in students:
     student.display()
+
+topper = students[0]
+
+for current_student in students:
+    if current_student.average() >= topper.average():
+        topper = current_student
+        
+print(f"Topper :- ")
+topper.display()
